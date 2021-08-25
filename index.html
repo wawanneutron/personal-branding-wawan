@@ -5,6 +5,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
@@ -22,6 +26,7 @@
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     />
+
     <link rel="stylesheet" href="/scss/index.css" />
     <link rel="shortcut icon" href="/images/logo.png" type="image/png" />
     <title>CodingNeutron</title>
@@ -81,34 +86,57 @@
     </div>
     <section class="home">
       <!-- header -->
-      <div class="header">
-        <div class="hero" id="particles-js"></div>
-        <div class="title-hero">
-          <h1>
-            Ayo Buat Websitemu Bersama <br />
-            CodingNeutron
-          </h1>
-          <span class="transparent-button"> Contact me </span>
-        </div>
+      <div class="hero" id="particles-js"></div>
+      <div class="title-hero">
+        <h1>
+          Ayo Buat Websitemu Bersama <br />
+          CodingNeutron
+        </h1>
+        <span class="transparent-button"> Contact me </span>
       </div>
     </section>
     <section class="about" id="about">
       <div class="text-center">
         <h2>About</h2>
       </div>
-      <div class="row container">
+      <div class="row text-center container con-about">
         <div class="col-md">
-          <img class="titik-left" src="/images/titik.png" alt="" />
-          <img class="img-profile img-fluid" src="/images/about.png" alt="" />
-        </div>
-        <div class="col-md content">
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque
-            reprehenderit harum minus. Ex asperiores facilis velit officia ullam
-            doloribus mollitia laudantium, sit officiis vero veniam ea at modi
-            amet rerum.
-          </p>
           <img class="titik" src="/images/titik.png" alt="" />
+          <img class="titik-left" src="/images/titik.png" alt="" />
+          <img class="img-profile" src="/images/about.png" alt="" />
+        </div>
+        <div class="col-md content swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <h3>
+                Hi there 👋 nama saya Wawan Stiawan biasa orang memanggil saya
+                wawan dalam keseharian, namun didalam organisasi ke mapalaan
+                saya biasa disebut "Kamplong" heheh 😅, itu adalah nama rimba,
+                bukan hal yang aneh di dunia kemapalaan.
+              </h3>
+            </div>
+            <div class="swiper-slide">
+              <h3>
+                Lahir di Kabupaten Tangerang, tepatnya di Tigaraksa city heheh,
+                dibesarkan oleh ke dua orang tua yang tangguh, dalam keseharian
+                saya menghabiskan waktu untuk exsplor berbagai pengetahuan
+                terutama dalam hal programing, walau kenyataanya pusing, tapi
+                ini sangat menarik.
+              </h3>
+            </div>
+            <div class="swiper-slide">
+              <h3>
+                Saya mempunyai berbagai skills atau kemampuan programing seperti
+                bahasa PHP (Laravel) sebagai serverside dan JavaScript (VueJS)
+                sebagai frontend, masih banyak lagi tools programing seperti:
+                HTML, CSS (SASS), dan kemampuan lain seperti, API Testing With
+                Postman, Design Flow Diagram
+              </h3>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
       </div>
     </section>
@@ -123,8 +151,28 @@
       integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="/script/particles.min.js"></script>
     <script src="/script/app.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 10000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!-- 
     <script

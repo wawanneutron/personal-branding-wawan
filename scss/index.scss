@@ -94,23 +94,43 @@ body {
     font-size: 32px;
     margin-bottom: 60px;
   }
-  .content {
+
+  .content h3 {
     font-size: 18px;
     color: #34364a;
     font-weight: 500;
     line-height: 32px;
+    font-style: italic;
+    &::before {
+      content: url(/images/quote-icon.svg);
+      margin-right: 10px;
+    }
+    &::after {
+      content: url(/images/quote-icon.svg);
+      margin-left: 10px;
+    }
+  }
+  // swiper
+  .swiper {
+    width: 600px;
+    height: 450px;
+  }
+
+  img.img-profile {
+    width: 50%;
   }
   img.titik-left {
     left: 0;
+    bottom: -15px;
     position: absolute;
     width: 100px;
-    margin-top: -70px;
   }
   img.titik {
     right: 0;
+    top: 0;
     position: absolute;
     width: 100px;
-    margin-top: -100px;
+    margin-top: -80px;
   }
 }
 
@@ -152,7 +172,7 @@ body {
 }
 /* mobile */
 @media (max-width: 576px) {
-  .header {
+  .home {
     .title-hero {
       text-align: left;
       h1 {
@@ -165,6 +185,30 @@ body {
       padding-left: 24px;
       position: absolute;
       top: 200px;
+    }
+  }
+
+  // about
+  .about {
+    img.img-profile {
+      width: 100%;
+    }
+    img.titik-left,
+    .titik {
+      opacity: 0.4;
+    }
+    h3 {
+      padding: 10px;
+    }
+    .con-about {
+      padding: 10px;
+      margin: 0;
+    }
+    .swiper-button-prev {
+      margin-left: -10px;
+    }
+    .swiper-button-next {
+      margin-right: -13px;
     }
   }
 }
