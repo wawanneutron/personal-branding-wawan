@@ -1,0 +1,168 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.nav-costum {
+  z-index: 1;
+}
+
+.nav-costum a.navbar-brand img {
+  width: 160px;
+}
+
+.nav-costum .nav-link {
+  margin-left: 30px;
+  color: #fff !important;
+}
+
+.nav-costum .btn-icon {
+  color: #aeaeae;
+  font-size: 20px;
+}
+
+.home .hero {
+  background-image: url(/images/bg1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  margin-top: -110px;
+  position: relative;
+}
+
+.home .hero::after {
+  content: "";
+  width: 100%;
+  height: 80vh;
+  position: absolute;
+  display: block;
+  top: 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.507)), to(rgba(0, 0, 0, 0.384)));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.384));
+}
+
+.home .title-hero {
+  text-align: center;
+  position: absolute;
+  color: #fff;
+  top: 25%;
+  width: 100%;
+}
+
+.home .title-hero h1 {
+  font-size: 60px;
+  line-height: 80px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.home .transparent-button {
+  padding: 10px 30px;
+  color: #fff;
+  border: 1px solid #fff;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 120%;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 4px;
+  -webkit-transition: background-color 300ms ease;
+  transition: background-color 300ms ease;
+  cursor: pointer;
+}
+
+.home .transparent-button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
+
+.about {
+  background-color: #fff;
+  margin-top: 80px;
+  position: relative;
+}
+
+.about h2 {
+  font-weight: 600;
+  color: #34364a;
+  font-size: 32px;
+  margin-bottom: 60px;
+}
+
+.about .content {
+  font-size: 18px;
+  color: #34364a;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.about img.titik-left {
+  left: 0;
+  position: absolute;
+  width: 100px;
+  margin-top: -70px;
+}
+
+.about img.titik {
+  right: 0;
+  position: absolute;
+  width: 100px;
+  margin-top: -100px;
+}
+
+.skils {
+  margin-top: 20px;
+  position: relative;
+}
+
+.skils .hero-title {
+  height: 40vh;
+  background-image: url(/images/coding.jpg);
+  background-image: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.skils .hero-title::after {
+  content: "";
+  width: 100%;
+  height: 40vh;
+  background-color: rgba(0, 0, 0, 0.349);
+  display: block;
+  top: 0;
+  position: absolute;
+}
+
+.skils h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 32px;
+  position: absolute;
+  top: 13%;
+  width: 100%;
+  margin: 0;
+}
+
+.skils .content-skils {
+  height: 100vh;
+}
+
+/* mobile */
+@media (max-width: 576px) {
+  .header .title-hero {
+    text-align: left;
+    color: #f7f7f7;
+    padding-left: 24px;
+    position: absolute;
+    top: 200px;
+  }
+  .header .title-hero h1 {
+    font-size: 35px !important;
+    line-height: 55px;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+}
+/*# sourceMappingURL=index.css.map */
