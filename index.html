@@ -34,57 +34,52 @@
   <body>
     <div class="container-fluid">
       <!-- navbar -->
-      <nav class="navbar navbar-expand-lg navbar-light nav-costum">
-        <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-dark nav-costum fixed-top">
+        <div class="container-fluid con-nav-mobile">
           <a class="navbar-brand" href="#">
             <img src="/images/logo_neutron.svg" alt="coding neutron" />
           </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mx-auto">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#skils">Skils</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Portofolio</a>
-              </li>
-            </ul>
-            <div class="d-flex">
-              <a href="#" class="btn-icon"><i class="fab fa-instagram"></i></a>
-              <a href="#" class="ms-4 btn-icon"
-                ><i class="fab fa-github"></i
-              ></a>
-              <a href="#" class="ms-4 btn-icon"
-                ><i class="fab fa-facebook"></i
-              ></a>
+
+          <ul class="navbar-nav mx-auto">
+            <!-- close -->
+            <div class="icon cancel-btn">
+              <i class="fas fa-times"></i>
             </div>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skils">Skils</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Portofolio</a>
+            </li>
+          </ul>
+          <div class="icon-social d-flex">
+            <a href="#" class="btn-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
+            <a href="#" class="btn-icon"><i class="fab fa-facebook"></i></a>
+          </div>
+
+          <!-- menu -->
+          <div class="icon menu-btn">
+            <i class="fas fa-bars"></i>
           </div>
         </div>
       </nav>
     </div>
-    <section class="home">
+    <section class="home" id="home">
       <!-- header -->
       <div class="hero" id="particles-js"></div>
       <div class="title-hero">
@@ -102,8 +97,8 @@
       <div class="row text-center container con-about">
         <div class="col-md">
           <img class="titik" src="/images/titik.png" alt="" />
-          <img class="titik-left" src="/images/titik.png" alt="" />
           <img class="img-profile" src="/images/about.png" alt="" />
+          <img class="titik-left" src="/images/titik.png" alt="" />
         </div>
         <div class="col-md content swiper mySwiper">
           <div class="swiper-wrapper">
@@ -141,11 +136,15 @@
       </div>
     </section>
     <section class="skils" id="skils">
-      <div class="hero-title" id="particles-js-skils"></div>
-      <h2>Skils</h2>
+      <div class="paralax-skils" id="particles-js-skils"></div>
+      <div class="title-skil">
+        <h2></h2>
+      </div>
       <div class="content-skils"></div>
     </section>
 
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/script/script.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
@@ -160,7 +159,7 @@
         spaceBetween: 30,
         centeredSlides: true,
         autoplay: {
-          delay: 10000,
+          delay: 3000,
           disableOnInteraction: false,
         },
         pagination: {

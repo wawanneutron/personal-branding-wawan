@@ -2,7 +2,24 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+/* navbar  togler  (icon)*/
+.icon {
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.icon.menu-btn {
+  display: none;
+}
+
+.icon.cancel-btn {
+  display: none;
+}
+
 .nav-costum {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   z-index: 1;
 }
 
@@ -11,7 +28,7 @@ body {
 }
 
 .nav-costum .nav-link {
-  margin-left: 30px;
+  margin-left: 20px;
   color: #fff !important;
 }
 
@@ -20,15 +37,33 @@ body {
   font-size: 20px;
 }
 
+.nav-costum .btn-icon {
+  margin-left: 25px;
+}
+
+.sticky {
+  padding: 0;
+  z-index: 9999;
+  background: #0f0e17;
+  color: #fffffe;
+}
+
+.sticky a.navbar-brand img {
+  width: 160px;
+}
+
+.sticky .icon-social {
+  display: none !important;
+}
+
 .home .hero {
+  position: relative;
+  height: 80vh;
   background-image: url(/images/bg1.jpg);
   background-size: cover;
-  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  height: 80vh;
-  margin-top: -110px;
-  position: relative;
+  background-attachment: fixed;
 }
 
 .home .hero::after {
@@ -38,8 +73,8 @@ body {
   position: absolute;
   display: block;
   top: 0;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.507)), to(rgba(0, 0, 0, 0.384)));
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.384));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.137)), to(rgba(0, 0, 0, 0.822)));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.137), rgba(0, 0, 0, 0.822));
 }
 
 .home .title-hero {
@@ -136,34 +171,52 @@ body {
   position: relative;
 }
 
-.skils .hero-title {
+.skils .paralax-skils {
   height: 40vh;
+  position: relative;
+  background-size: cover;
   background-image: url(/images/coding.jpg);
-  background-image: cover;
+  background-size: auto;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  position: relative;
 }
 
-.skils .hero-title::after {
+.skils .paralax-skils::after {
   content: "";
   width: 100%;
   height: 40vh;
-  background-color: rgba(0, 0, 0, 0.349);
+  background-color: rgba(104, 104, 104, 0.205);
   display: block;
   top: 0;
   position: absolute;
 }
 
-.skils h2 {
+.skils .title-skil h2 {
   text-align: center;
   color: #fff;
-  font-size: 32px;
   position: absolute;
   top: 13%;
   width: 100%;
   margin: 0;
+}
+
+.skils .title-skil h2::before {
+  content: "Skils";
+  font-size: 32px !important;
+  letter-spacing: 20px;
+  font-weight: 400;
+  display: inline-block;
+  padding: 10px 40px;
+  color: #fff;
+  border: 1px solid #fff;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 120%;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 4px;
+  -webkit-transition: background-color 300ms ease;
+  transition: background-color 300ms ease;
 }
 
 .skils .content-skils {
@@ -171,7 +224,90 @@ body {
 }
 
 /* mobile */
-@media (max-width: 576px) {
+@media (max-width: 772px) {
+  .sticky {
+    padding: 0;
+    z-index: 9999;
+    background: #0f0e17;
+    color: #fffffe;
+  }
+  .sticky a.navbar-brand img {
+    width: 110px;
+  }
+  .icon-social {
+    position: absolute;
+    top: 0px;
+    left: 70px;
+    font-weight: lighter;
+  }
+  body.disabledScroll {
+    overflow: hidden;
+  }
+  .icon.menu-btn {
+    margin-right: 20px;
+  }
+  .icon.menu-btn.hide {
+    display: none !important;
+  }
+  .icon.cancel-btn.hide {
+    display: none !important;
+  }
+  /* icon navbar colapse */
+  .icon.menu-btn {
+    display: block;
+  }
+  .icon.cancel-btn {
+    display: block;
+    position: absolute;
+    right: 30px;
+    cursor: pointer;
+  }
+  nav.navbar {
+    /* custom navbar sticky */
+  }
+  nav.navbar .btn-icon {
+    margin-left: 12px;
+  }
+  nav.navbar .navbar-nav {
+    position: fixed;
+    top: 0px;
+    left: -100%;
+    height: 100vh;
+    width: 100%;
+    max-width: 400px;
+    background: #0f0e17bb;
+    display: block;
+    padding: 40px 0;
+    text-align: center;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  nav.navbar .navbar-nav a.nav-link {
+    font-size: 18px;
+    margin-top: 50px;
+    font-weight: lighter;
+  }
+  nav.navbar .navbar-nav .active::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 45.5%;
+    width: 50px;
+    height: 2px;
+    background: #f2ad5f;
+    border-radius: 27px;
+    text-align: center !important;
+  }
+  nav.navbar .navbar-nav.active {
+    left: 0%;
+  }
+  /* home */
+  .home .hero {
+    height: 90vh;
+  }
+  .home .hero::after {
+    height: 90vh;
+  }
   .home .title-hero {
     text-align: left;
     color: #f7f7f7;
@@ -186,7 +322,7 @@ body {
     margin-bottom: 30px;
   }
   .about img.img-profile {
-    width: 100%;
+    width: 70%;
   }
   .about img.titik-left,
   .about .titik {
@@ -194,6 +330,7 @@ body {
   }
   .about h3 {
     padding: 10px;
+    font-size: 16px !important;
   }
   .about .con-about {
     padding: 10px;
@@ -204,6 +341,32 @@ body {
   }
   .about .swiper-button-next {
     margin-right: -13px;
+  }
+  /* skils */
+  .skils .title-skil h2 {
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 13%;
+    width: 100%;
+    margin: 0;
+  }
+  .skils .title-skil h2::before {
+    content: "Skils";
+    font-size: 24px !important;
+    letter-spacing: 20px;
+    font-weight: 400;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    border: 1px solid #fff;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 120%;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 4px;
+    -webkit-transition: background-color 300ms ease;
+    transition: background-color 300ms ease;
   }
 }
 /*# sourceMappingURL=index.css.map */
