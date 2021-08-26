@@ -52,10 +52,6 @@ body {
   width: 160px;
 }
 
-.sticky .icon-social {
-  display: none !important;
-}
-
 .home .hero {
   position: relative;
   height: 80vh;
@@ -228,16 +224,22 @@ body {
   .sticky {
     padding: 0;
     z-index: 9999;
-    background: #0f0e17;
+    background: #0f0e17e3;
     color: #fffffe;
   }
   .sticky a.navbar-brand img {
     width: 110px;
   }
+  .sticky .icon-social {
+    display: none !important;
+  }
   .icon-social {
     position: absolute;
     top: 0px;
     left: 70px;
+  }
+  .icon-social .btn-icon {
+    font-size: 18px;
     font-weight: lighter;
   }
   body.disabledScroll {
@@ -275,7 +277,7 @@ body {
     height: 100vh;
     width: 100%;
     max-width: 400px;
-    background: #0f0e17bb;
+    background: #0f0e17bd;
     display: block;
     padding: 40px 0;
     text-align: center;
