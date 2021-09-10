@@ -215,8 +215,29 @@ body {
       }
     }
   }
+  // skils
   .content-skils {
     height: 100vh;
+    margin-top: 30px;
+    img {
+      width: 60px;
+      margin-bottom: 10px;
+    }
+    .card-skil {
+      text-align: center;
+      margin-bottom: 20px;
+      .title {
+        color: #123049;
+        font-size: 18px;
+      }
+      .subtitle {
+        margin-top: 10px;
+        color: #7686ab;
+        span {
+          font-weight: 500;
+        }
+      }
+    }
   }
 }
 /* mobile */
@@ -236,9 +257,8 @@ body {
     }
   }
   .icon-social {
-    position: absolute;
-    top: 0px;
-    left: 70px;
+    display: none !important;
+
     .btn-icon {
       font-size: 18px;
       font-weight: lighter;
@@ -382,6 +402,32 @@ body {
           -webkit-transition: background-color 300ms ease;
           -moz-transition: background-color 300ms ease;
           transition: background-color 300ms ease;
+        }
+      }
+    }
+    .content-skils {
+      img {
+        width: 40px;
+        margin-bottom: 20px;
+      }
+      img.figma {
+        width: 30px;
+      }
+      .card-skil {
+        text-align: center;
+        margin-bottom: 20px;
+        .title {
+          color: #123049;
+          font-size: 16px;
+        }
+        .subtitle {
+          margin-top: 10px;
+          color: #7686ab;
+          font-size: 14px;
+
+          span {
+            font-weight: 500;
+          }
         }
       }
     }

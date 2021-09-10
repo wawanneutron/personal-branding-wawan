@@ -217,6 +217,31 @@ body {
 
 .skils .content-skils {
   height: 100vh;
+  margin-top: 30px;
+}
+
+.skils .content-skils img {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.skils .content-skils .card-skil {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.skils .content-skils .card-skil .title {
+  color: #123049;
+  font-size: 18px;
+}
+
+.skils .content-skils .card-skil .subtitle {
+  margin-top: 10px;
+  color: #7686ab;
+}
+
+.skils .content-skils .card-skil .subtitle span {
+  font-weight: 500;
 }
 
 /* mobile */
@@ -234,9 +259,7 @@ body {
     display: none !important;
   }
   .icon-social {
-    position: absolute;
-    top: 0px;
-    left: 70px;
+    display: none !important;
   }
   .icon-social .btn-icon {
     font-size: 18px;
@@ -369,6 +392,29 @@ body {
     border-radius: 4px;
     -webkit-transition: background-color 300ms ease;
     transition: background-color 300ms ease;
+  }
+  .skils .content-skils img {
+    width: 40px;
+    margin-bottom: 20px;
+  }
+  .skils .content-skils img.figma {
+    width: 30px;
+  }
+  .skils .content-skils .card-skil {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .skils .content-skils .card-skil .title {
+    color: #123049;
+    font-size: 16px;
+  }
+  .skils .content-skils .card-skil .subtitle {
+    margin-top: 10px;
+    color: #7686ab;
+    font-size: 14px;
+  }
+  .skils .content-skils .card-skil .subtitle span {
+    font-weight: 500;
   }
 }
 /*# sourceMappingURL=index.css.map */
