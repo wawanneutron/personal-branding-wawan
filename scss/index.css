@@ -265,7 +265,6 @@ body {
 
 .services .content {
   margin-top: 30px;
-  height: 100vh;
 }
 
 .services .content .logo {
@@ -307,6 +306,28 @@ body {
           box-shadow: 0 15px 30px rgba(102, 113, 228, 0.5);
   -webkit-transition: 1s;
   transition: 1s;
+}
+
+/* acordion-services */
+.acordion-services {
+  margin-top: 80px;
+}
+
+.acordion-services .accordion {
+  margin-top: 30px;
+}
+
+.acordion-services .accordion .accordion-item button {
+  color: #123049;
+}
+
+.acordion-services .accordion .accordion-item .accordion-body p {
+  color: #7686ab;
+}
+
+.portofolio {
+  margin-top: 100px;
+  height: 100vh;
 }
 
 /* mobile */

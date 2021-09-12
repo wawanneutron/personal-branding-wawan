@@ -255,7 +255,6 @@ body {
   margin-top: 100px;
   .content {
     margin-top: 30px;
-    height: 100vh;
     .logo {
       background-color: #3652f4bd;
       width: 60px;
@@ -289,6 +288,29 @@ body {
       }
     }
   }
+}
+
+/* acordion-services */
+.acordion-services {
+  margin-top: 80px;
+  .accordion {
+    margin-top: 30px;
+    .accordion-item {
+      button {
+        color: #123049;
+      }
+      .accordion-body {
+        p {
+          color: #7686ab;
+        }
+      }
+    }
+  }
+}
+// portofolio
+.portofolio {
+  margin-top: 100px;
+  height: 100vh;
 }
 
 /* mobile */
