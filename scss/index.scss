@@ -165,8 +165,22 @@ body {
   margin-top: 20px;
   position: relative;
 
+  &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    background-color: #e5e5f7;
+    opacity: 0.5;
+    background-image: radial-gradient(#444cf7 0.75px, transparent 0.75px),
+      radial-gradient(#444cf7 0.75px, #e5e5f7 0.75px);
+    background-size: 30px 30px;
+    background-position: 0 0, 15px 15px;
+  }
   .paralax-skils {
-    height: 40vh;
+    height: 50vh;
     position: relative;
     background-size: cover;
     background-image: url(/images/coding.jpg);
@@ -179,51 +193,46 @@ body {
   .paralax-skils::after {
     content: "";
     width: 100%;
-    height: 40vh;
+    height: 50vh;
     background-color: rgba(104, 104, 104, 0.205);
     display: block;
     top: 0;
     position: absolute;
   }
   .title-skil {
+    position: relative;
     h2 {
       text-align: center;
       color: #fff;
       position: absolute;
-      top: 13%;
+      top: 40%;
       width: 100%;
       margin: 0;
       &::before {
-        content: "Skils";
+        content: "  Skils";
         font-size: 32px !important;
         letter-spacing: 20px;
         font-weight: 400;
         display: inline-block;
-        padding: 10px 40px;
+        padding: 10px 40px 10px 60px;
         color: #fff;
         border: 1px solid #fff;
         text-decoration: none;
         font-size: 14px;
-        line-height: 120%;
-        background-color: rgba(255, 255, 255, 0);
-        -webkit-border-radius: 4px;
-        -moz-border-radius: 4px;
+        background-color: rgba(25, 216, 250, 0.137);
         border-radius: 4px;
-        -webkit-transition: background-color 300ms ease;
-        -moz-transition: background-color 300ms ease;
-        transition: background-color 300ms ease;
       }
     }
   }
   // skils
   .content-skils {
-    height: 100vh;
-    margin-top: 30px;
+    margin-top: -80px;
     img {
       width: 60px;
       margin-bottom: 10px;
     }
     .card-skil {
+      border-radius: 0 15% 0 15%;
       text-align: center;
       margin-bottom: 20px;
       .title {
@@ -376,11 +385,12 @@ body {
   /* skils */
   .skils {
     .title-skil {
+      position: relative;
       h2 {
         text-align: center;
         color: #fff;
         position: absolute;
-        top: 13%;
+        top: 40%;
         width: 100%;
         margin: 0;
         &::before {
@@ -389,19 +399,13 @@ body {
           letter-spacing: 20px;
           font-weight: 400;
           display: inline-block;
-          padding: 10px 20px;
+          padding: 10px 20px 10px 40px;
           color: #fff;
           border: 1px solid #fff;
           text-decoration: none;
           font-size: 14px;
-          line-height: 120%;
-          background-color: rgba(255, 255, 255, 0);
-          -webkit-border-radius: 4px;
-          -moz-border-radius: 4px;
+          background-color: rgba(25, 216, 250, 0.137);
           border-radius: 4px;
-          -webkit-transition: background-color 300ms ease;
-          -moz-transition: background-color 300ms ease;
-          transition: background-color 300ms ease;
         }
       }
     }
