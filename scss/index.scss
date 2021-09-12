@@ -249,6 +249,48 @@ body {
     }
   }
 }
+
+// services
+.services {
+  margin-top: 100px;
+  .content {
+    margin-top: 30px;
+    height: 100vh;
+    .logo {
+      background-color: #3652f4bd;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      margin: 10px auto;
+      i {
+        margin: 10px auto;
+        font-weight: 400;
+        color: rgb(224, 224, 224);
+      }
+    }
+    .card {
+      margin-bottom: 40px;
+      border-radius: 8px;
+      box-shadow: 0 15px 30px rgba(102, 113, 228, 0.13);
+      .title {
+        font-size: 20px;
+        font-weight: 400;
+        color: #123049;
+        margin-top: 20px;
+      }
+      .sub-title {
+        font-size: 18px;
+        color: #7686ab;
+        margin-top: 10px;
+      }
+      &:hover {
+        box-shadow: 0 15px 30px rgba(102, 113, 228, 0.5);
+        transition: 1s;
+      }
+    }
+  }
+}
+
 /* mobile */
 @media (max-width: 772px) {
   .sticky {
@@ -432,6 +474,26 @@ body {
           span {
             font-weight: 500;
           }
+        }
+      }
+    }
+  }
+
+  // services
+  .services {
+    margin-top: 50px;
+    .content {
+      .card {
+        .title {
+          font-size: 18px;
+          font-weight: 400;
+          color: #123049;
+          margin-top: 20px;
+        }
+        .sub-title {
+          font-size: 16px;
+          color: #7686ab;
+          margin-top: 10px;
         }
       }
     }

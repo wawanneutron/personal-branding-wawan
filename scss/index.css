@@ -259,6 +259,56 @@ body {
   font-weight: 500;
 }
 
+.services {
+  margin-top: 100px;
+}
+
+.services .content {
+  margin-top: 30px;
+  height: 100vh;
+}
+
+.services .content .logo {
+  background-color: #3652f4bd;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 10px auto;
+}
+
+.services .content .logo i {
+  margin: 10px auto;
+  font-weight: 400;
+  color: #e0e0e0;
+}
+
+.services .content .card {
+  margin-bottom: 40px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 15px 30px rgba(102, 113, 228, 0.13);
+          box-shadow: 0 15px 30px rgba(102, 113, 228, 0.13);
+}
+
+.services .content .card .title {
+  font-size: 20px;
+  font-weight: 400;
+  color: #123049;
+  margin-top: 20px;
+}
+
+.services .content .card .sub-title {
+  font-size: 18px;
+  color: #7686ab;
+  margin-top: 10px;
+}
+
+.services .content .card:hover {
+  -webkit-box-shadow: 0 15px 30px rgba(102, 113, 228, 0.5);
+          box-shadow: 0 15px 30px rgba(102, 113, 228, 0.5);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
 /* mobile */
 @media (max-width: 772px) {
   .sticky {
@@ -430,6 +480,20 @@ body {
   }
   .skils .content-skils .card-skil .subtitle span {
     font-weight: 500;
+  }
+  .services {
+    margin-top: 50px;
+  }
+  .services .content .card .title {
+    font-size: 18px;
+    font-weight: 400;
+    color: #123049;
+    margin-top: 20px;
+  }
+  .services .content .card .sub-title {
+    font-size: 16px;
+    color: #7686ab;
+    margin-top: 10px;
   }
 }
 /*# sourceMappingURL=index.css.map */
