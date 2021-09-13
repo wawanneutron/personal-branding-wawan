@@ -307,10 +307,45 @@ body {
     }
   }
 }
-// portofolio
-.portofolio {
+// projects
+.section-project {
   margin-top: 100px;
-  height: 100vh;
+  .project {
+    margin-top: 50px;
+    .card-project {
+      border-radius: 8px;
+      margin-bottom: 20px;
+      border: none;
+      box-shadow: 0 15px 30px rgba(102, 113, 228, 0.13);
+      &:hover {
+        box-shadow: 0 15px 30px rgba(102, 113, 228, 0.5);
+        transition: 1s;
+      }
+      .img-project {
+        border-radius: 8px 8px 0 0;
+        height: 12em;
+      }
+    }
+    .card-body {
+      .title {
+        color: #123049;
+        font-size: 20px;
+      }
+      .subtitle {
+        color: #7686ab;
+        font-size: 16px;
+        margin-top: 12px;
+      }
+    }
+  }
+}
+
+/* footer */
+.card-footer {
+  margin-top: 100px;
+  background-color: #0f0e17;
+  color: #fff;
+  font-weight: 300;
 }
 
 /* mobile */
