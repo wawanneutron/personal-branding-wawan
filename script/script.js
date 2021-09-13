@@ -22,7 +22,9 @@ cancelBtn.onclick = () => {
 $(window).scroll(function () {
   if (this.scrollY > 100) {
     $(".navbar").addClass("sticky");
+    $(".navbar-brand img").attr("src", "/images/logo_neutron_sticky.svg");
   } else {
     $(".navbar").removeClass("sticky");
+    $(".navbar-brand img").attr("src", "/images/logo_neutron.svg");
   }
 });

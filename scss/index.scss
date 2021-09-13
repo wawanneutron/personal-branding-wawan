@@ -39,10 +39,19 @@ body {
 .sticky {
   padding: 0;
   z-index: 9999;
-  background: #0f0e17;
-  color: #fffffe;
+  background: #fff;
+  ul {
+    .nav-item {
+      a.nav-link {
+        color: #0f0e17 !important;
+      }
+    }
+  }
   a.navbar-brand {
-    img {
+    .logo-normal {
+      width: 160px;
+    }
+    .logo-sticky {
       width: 160px;
     }
   }
@@ -252,7 +261,7 @@ body {
 
 // services
 .services {
-  margin-top: 100px;
+  margin-top: 70px;
   .content {
     margin-top: 30px;
     .logo {
@@ -314,16 +323,30 @@ body {
     margin-top: 50px;
     .card-project {
       border-radius: 8px;
-      margin-bottom: 20px;
+      margin-bottom: 50px;
       border: none;
       box-shadow: 0 15px 30px rgba(102, 113, 228, 0.13);
       &:hover {
         box-shadow: 0 15px 30px rgba(102, 113, 228, 0.5);
         transition: 1s;
       }
-      .img-project {
+      .project-thumbnail {
+        width: 100%;
+        overflow: hidden;
         border-radius: 8px 8px 0 0;
-        height: 12em;
+        &:hover {
+          img {
+            transform: scale(1.5);
+          }
+        }
+        .img-project {
+          width: 100%;
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          transition: all 0.7s ease;
+          height: 250px;
+        }
       }
     }
     .card-body {
@@ -346,6 +369,7 @@ body {
   background-color: #0f0e17;
   color: #fff;
   font-weight: 300;
+  font-size: 16px;
 }
 
 /* mobile */
@@ -355,6 +379,13 @@ body {
     z-index: 9999;
     background: #0f0e17e3;
     color: #fffffe;
+    ul {
+      .nav-item {
+        a.nav-link {
+          color: #ffffff !important;
+        }
+      }
+    }
     a.navbar-brand {
       img {
         width: 110px;
@@ -554,5 +585,10 @@ body {
         }
       }
     }
+  }
+
+  // footer
+  .card-footer {
+    font-size: 12px;
   }
 }
