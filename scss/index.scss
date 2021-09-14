@@ -363,13 +363,30 @@ body {
   }
 }
 
+// contact
+.main-contact {
+  margin-top: 100px;
+  .card-contact {
+    margin-top: 50px;
+    border: none;
+    font-size: 16px;
+    .img-thumb {
+      margin-bottom: 20px;
+    }
+    img {
+      margin-right: 10px;
+      width: 35px;
+    }
+  }
+}
+
 /* footer */
 .card-footer {
   margin-top: 100px;
-  background-color: #0f0e17;
-  color: #fff;
-  font-weight: 300;
-  font-size: 16px;
+  background-color: #fffffe;
+  color: #7686ab;
+  font-weight: 400;
+  font-size: 14px;
 }
 
 /* mobile */
@@ -590,5 +607,21 @@ body {
   // footer
   .card-footer {
     font-size: 12px;
+  }
+
+  // contact
+  .main-contact {
+    margin-top: 100px;
+    .card-contact {
+      margin-top: 20px;
+      border: none;
+      .img-thumb {
+        margin-bottom: 20px;
+        font-size: 14px;
+      }
+      img {
+        width: 25px;
+      }
+    }
   }
 }
