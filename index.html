@@ -29,9 +29,11 @@
     <link rel="stylesheet" href="/scss/index.css" />
     <link rel="shortcut icon" href="/images/logo.png" type="image/png" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/scss/floating-wpp.min.css" />
     <title>CodingNeutron</title>
   </head>
   <body>
+    <div id="myDiv" style="z-index: 99999"></div>
     <div class="container-fluid">
       <!-- navbar -->
       <nav class="navbar navbar-expand-md navbar-dark nav-costum fixed-top">
@@ -362,8 +364,10 @@
               <div class="card-body">
                 <div class="title">Dinamis Portofolio</div>
                 <div class="subtitle">
-                  Client project portofolio, live demo <a href="https://elsihadipa.com/" target="_blank">visit hire</a>
-                  
+                  Client project portofolio, live demo
+                  <a href="https://elsihadipa.com/" target="_blank"
+                    >visit hire</a
+                  >
                 </div>
                 <div class="badge-project mt-3">
                   <span class="badge bg-primary">Laravel</span>
@@ -597,8 +601,16 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="/script/particles.min.js"></script>
     <script src="/script/app.js"></script>
+    <script src="/script/floating-wpp.min.js"></script>
     <!-- Initialize Swiper -->
     <script>
+      $("#myDiv").floatingWhatsApp({
+        phone: "6287732697337",
+        popupMessage: "Hello, how can we help you?",
+        showPopup: true,
+        autoOpenTimeout: 5000,
+      });
+
       AOS.init();
 
       var swiper = new Swiper(".mySwiper", {
