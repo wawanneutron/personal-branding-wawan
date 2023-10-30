@@ -103,11 +103,11 @@
       <!-- header -->
       <div class="hero" id="particles-js"></div>
       <div class="title-hero">
-        <h1>
-          My Portofolio <br />
-          Wawan Setiawan
-        </h1>
-        <span class="transparent-button"> Contact me </span>
+        <h1>Hello Welcome My Portfolio</h1>
+        <h2>I'm a 
+          <span id="element"></span>
+        </h2>
+        <!-- <button class="transparent-button"> Contact me </button> -->
       </div>
     </section>
     <section class="about" id="about">
@@ -887,6 +887,7 @@
     <script src="/script/particles.min.js"></script>
     <script src="/script/app.js"></script>
     <script src="/script/floating-wpp.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <!-- Initialize Swiper -->
     <script>
       $("#myDiv").floatingWhatsApp({
@@ -913,6 +914,14 @@
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
+      });
+    </script>
+
+    <script>
+      new Typed('#element', {
+        strings: ['Programmer', 'Frontend Developer', 'Web Developer', 'Fullstack Developer', 'Freelancer'],
+        typeSpeed: 50,
+        loop: true
       });
     </script>
     <!-- Option 2: Separate Popper and Bootstrap JS -->

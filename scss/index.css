@@ -107,10 +107,24 @@ body {
 }
 
 .home .title-hero h1 {
-  font-size: 60px;
+  font-size: 52px;
   line-height: 80px;
   font-weight: 500;
   margin-bottom: 20px;
+}
+
+.home .title-hero h2 {
+  font-size: 42px;
+}
+
+@media only screen and (max-width: 600px) {
+  .home .title-hero h2 {
+    font-size: 30px;
+  }
+}
+
+.home .title-hero #element {
+  color: red;
 }
 
 .home .transparent-button {
@@ -478,6 +492,7 @@ body {
     display: block;
     position: absolute;
     right: 30px;
+    top: 60px;
     cursor: pointer;
   }
   nav.navbar {
